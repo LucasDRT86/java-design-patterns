@@ -5,10 +5,9 @@ import java.time.format.DateTimeFormatter;
 
 public class DateUtils {
 
-	/**
-	 * formatter
-	 */
+	/** formatter */
 	private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+	
 	/** Transforme une date au format String en {@link LocalDateTime}
 	 * @param dateStr date au format String
 	 * @return LocalDateTime
