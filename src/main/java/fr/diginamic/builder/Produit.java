@@ -26,6 +26,14 @@ public class Produit {
 	/** Liste des ingredient dans le produit*/
 	private List<Ingredient> ingredient = new ArrayList<>();
 	
+	
+	
+	/**
+	 * 
+	 */
+	public Produit() {
+	}
+
 	/** Constructeur de la classe produit
 	 * @param nom
 	 * @param grade
@@ -94,6 +102,49 @@ public class Produit {
 	public void setCategorie(Categorie categorie) {
 		this.categorie = categorie;
 	}
+	
+	/**
+	 * @param allergene
+	 */
+	public void addAllergene(Allergene allergene) {
+		this.allergene.add(allergene);
+	}
+	
+	/**
+	 * @param ingredient
+	 */
+	public void addIngredient(Ingredient ingredient) {
+		this.ingredient.add(ingredient);
+	}
+	
+	/**
+	 * @param additif
+	 */
+	public void addAdditif(Additif additif) {
+		this.additif.add(additif);
+	}
+
+	/**
+	 * @return the additif
+	 */
+	public List<Additif> getAdditif() {
+		return additif;
+	}
+
+	/**
+	 * @return the allergene
+	 */
+	public List<Allergene> getAllergene() {
+		return allergene;
+	}
+
+	/**
+	 * @return the ingredient
+	 */
+	public List<Ingredient> getIngredient() {
+		return ingredient;
+	}
+	
 	
 	
 }
